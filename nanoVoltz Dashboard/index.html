@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>nanoVOLTZ Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font liberary-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons liberary-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Start Header -->
+      <header class="header">
+
+      <!-- Start Menu Toggle -->
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+      <!-- End Menu Toggle -->
+
+      <!-- Start Menu Tabs-->
+        <div class="header-left">
+          <span class="tabs-menu">
+            <ul class="tabs">
+              <li class="active">Dashboard</li>
+              <li>Pools</li>
+              <li>Tokens</li>
+              <li>Market</li>
+              <li>NFT</li>
+            </ul>
+          </span>
+        </div>
+      <!-- End Menu Tabs-->
+
+     <!-- Start Account icons-->
+        <div class="header-right">
+          <span class="search">
+            <span class="search-icon material-icons-outlined">search</span>
+            <input class="search-input" type="search" placeholder="Search Pools or Tokens">
+          </span>
+          <span class="account-image">
+            <img src="images/profile-image.jpg" alt="Profile Image">
+          </span>
+          <span class="more-icon">
+            <span class="arrow material-icons-outlined">arrow_drop_down</span>
+          </span>
+        </div>
+     <!-- End Account icons-->
+
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Sidebar -->
+      <aside id="sidebar">
+
+     <!-- Start logo -->
+        <div class="sidebar-brand">
+          <div class="logo">nanoVoltz</div>
+        </div>
+     <!-- End logo -->
+
+     <!-- Start Menu -->
+        <div class="sidebar-add">
+          <span class="material-icons-outlined add">add</span>
+        </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">home</span> 
+            </a>
+          </li>
+          <li class="sidebar-list-item active" >
+            <a href="#" >
+              <span class="material-icons-outlined" >bar_chart</span> 
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">	swap_horiz</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">videogame_asset</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">group</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">settings</span> 
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">more_horiz</span> 
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Menu -->
+
+      <!-- End Sidebar -->
+
+      <!-- Start Main Section -->
+      <main class="main-container">
+
+     <!-- Start Charts Section -->
+        <div class="charts">
+
+          <div class="charts-card">
+            <div class="chart-header">
+              <span class="chart-header-left">
+                <span class="chart-image">
+                  <img src="images/profile-image.jpg" alt="Profile Image">
+                </span>
+                <span class="card-title">
+                  <p> TVL</p>
+                  <h1>$4.86B</h1>
+                </span>
+              </span>
+              <span class="chart-header-right">
+                <span class="material-icons-outlined more">more_horiz</span> 
+              </span>
+            </div>
+            <div id="chart1">
+            </div>
+          </div>
+
+          <div class="charts-card">
+            <div class="chart-header">
+              <span class="chart-header-left">
+                <span class="card-title">
+                  <p> Volume IY</p>
+                  <h1>$1.42T</h1>
+                </span>
+              </span>
+              <span class="chart1-header-right">
+                <span>IW</span> 
+                <span>IN</span> 
+                <span class="active">IY</span> 
+              </span>
+            </div>
+            <div id="chart2">
+            </div>
+          </div>
+
+        </div>
+          <!-- End Charts Section -->
+
+         <!-- Start cards Section -->
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                <span class="card-image">
+                  <img src="images/profile-image.jpg" alt="Profile Image">
+                </span>
+                <span class="card-title">
+                  <p> SHIP</p>
+                  <h1>$0.00002642</h1>
+                </span>
+              </div>
+              <div class="card-header-icon">
+                <span class="material-icons-outlined trending-icon" style="font-size:15px;">trending_up</span> 
+                <span class="trending">1.5%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                <span class="card-image">
+                  <img src="images/profile-image.jpg" alt="Profile Image">
+                </span>
+                <span class="card-title">
+                  <p> LTC</p>
+                  <h1>$106.42</h1>
+                </span>
+              </div>
+              <div class="card-header-icon">
+                <span class="material-icons-outlined trending-icon" style="font-size:15px;">trending_up</span> 
+                <span class="trending">1.56%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                <span class="card-image">
+                  <img src="images/profile-image.jpg" alt="Profile Image">
+                </span>
+                <span class="card-title">
+                  <p> XRP</p>
+                  <h1>$0.8235</h1>
+                </span>
+              </div>
+              <div class="card-header-icon">
+                <span class="material-icons-outlined trending-icon" style="font-size:15px;">trending_up</span> 
+                <span class="trending">1.56%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                <span class="card-image">
+                  <img src="images/profile-image.jpg" alt="Profile Image">
+                </span>
+                <span class="card-title">
+                  <p> TRX</p>
+                  <h1>$1.01</h1>
+                </span>
+              </div>
+              <div class="card-header-icon">
+                <span class="material-icons-outlined trending-icon" style="font-size:15px;">trending_up</span> 
+                <span class="trending">1.56%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                <span class="card-image">
+                  <img src="images/profile-image.jpg" alt="Profile Image">
+                </span>
+                <span class="card-title">
+                  <p> SUSHI</p>
+                  <h1>$2.642</h1>
+                </span>
+              </div>
+              <div class="card-header-icon">
+                <span class="material-icons-outlined trending-icon" style="font-size:15px;">trending_up</span> 
+                <span class="trending">1.56%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- End cards Section -->
+
+
+       <!-- Start table Section -->
+        <div class="main-table">
+            <div class="table-header">
+              <h1>Employees</h1>
+              <div class="table-header-icons">
+                <span class="material-icons-outlined " >search</span> 
+                <span class="material-icons-outlined " >cloud_download</span> 
+                <span class="material-icons-outlined " >print</span> 
+                <span class="material-icons-outlined " >view_column</span> 
+                <span class="material-icons-outlined " >filter_list</span> 
+              </div>
+          </div>
+          <div class="emplyee-table">
+            <table>
+              <tr>
+                 <th><input type="checkbox"></th>
+                 <th>Name</th>
+                 <th>ID</th>
+                 <th>Phone</th>
+                 <th>Applied Shift</th>
+                 <th>Substitute</th>
+                 <th>Status</th>
+                 <th>Comments</th>
+                 <th></th>
+              </tr>
+              <tr>
+               <td><input type="checkbox"></td>
+               <td>Andrew Jacob</td>
+               <td>ADBW-124K9</td>
+               <td>+971 00123 4567</td>
+               <td>9:00 - 15:00<br>All Days</td>
+               <td>N/A</td>
+               <td class="active">Active</td>
+               <td>N/A</td>
+               <td><span class="material-icons-outlined " style="color: red;" >create</span></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>John Castrvich</td>
+                <td>ADBW-832F99</td>
+                <td>+971 00 123 4567</td>
+                <td>9:00 - 12:00<br>Sun, Mon, Tue, Sat</td>
+                <td>N/A</td>
+                <td class="Substitute">Active Substitute</td>
+                <td>N/A</td>
+                <td><span class="material-icons-outlined " style="color: red;">create</span></td>
+               </tr>
+            </table>
+          </div>
+          <div class="table-footer">
+            <span>Rows Per Pages:25</span>
+            <span class="material-icons-outlined ">	expand_more</span>
+            <span>1-4 of 4</span>
+            <span class="material-icons-outlined ">chevron_left</span>
+            <span class="material-icons-outlined ">chevron_right</span>
+          </div>
+        </div>
+       <!-- End table Section -->
+
+       <!-- Start Trending Charts -->
+       <div class="main-chart-section">
+        <div class="chart-section">
+          <div class="chart-section-header">
+            <span class="card-title">
+              <p>TVL</p>
+              <h1>$4.86B</h1>
+            </span>
+           <span class="material-icons-outlined ">more_horiz</span>
+          </div>
+          <div class="card-header-icon">
+            <span class="material-icons-outlined trending-icon" style="font-size:15px;">trending_up</span> 
+            <span class="trending" style="color:#ccc;">1.56%</span>
+          </div>
+          <div id="chart3"></div>
+        </div>
+
+        <div class="chart-section">
+         <div class="chart-section-header">
+          <span class="card-title">
+            <p>Circulating Supply</p>
+            <h1>285,277,770</h1>
+         </span>
+         <span class="material-icons-outlined ">more_horiz</span>
+         </div>
+         <div class="card-header-icon">
+           <span class="material-icons-outlined trending-icon" style="font-size:15px;color:#ff0000">trending_up</span> 
+           <span class="trending" style="color:#ccc;">1.56%</span>
+         </div>
+         <div id="chart4"> </div>
+        </div>
+
+        <div class="chart-section">
+          <div class="chart-section-header">
+            <span class="card-title">
+              <p>Price</p>
+              <h1>$0.51</h1>
+            </span>
+            <span class="material-icons-outlined ">more_horiz</span>
+          </div>
+          <div class="card-header-icon">
+            <span class="material-icons-outlined trending-icon" style="font-size:15px;color:#ccc">trending_up</span> 
+            <span class="trending" style="color:#ccc;">0.00%</span>
+          </div>
+          <div id="chart5"></div>
+        </div>
+
+      </div>
+      <!-- End Trending Charts -->
+
+      </main>
+      <!-- End Main section-->
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
